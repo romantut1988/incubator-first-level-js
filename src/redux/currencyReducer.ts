@@ -52,9 +52,9 @@ export const currencyReducer = (state: CurrencyState = initialState, action: Cur
                 ...state,
                 ...action.payload,
                 // Зануляем поля при смене направления операции
-                amountOfBYN: '',
-                amountOfCurrency: '',
-            };
+                amountOfBYN: "",
+                amountOfCurrency: "",
+            }
         default:
             return state;
     }
@@ -65,8 +65,8 @@ export const currencyReducer = (state: CurrencyState = initialState, action: Cur
     //             ...state,
     //             ...action.payload,
     //             // Зануляем поля при смене направления операции
-    //             amountOfBYN: '',
-    //             amountOfCurrency: '',
+    //             amountOfBYN: "",
+    //             amountOfCurrency: "",
     //         };
     //     }
     // };
@@ -74,6 +74,6 @@ export const currencyReducer = (state: CurrencyState = initialState, action: Cur
 };
 
 export const selectCurrencies = (state:IGlobalState) => state.currency.currencies;
-//export const selectItemById = (state:IGlobalState) => (id: string) => state.currency.currencies.find();
-//export const selectItemById = (state:IGlobalState) => state.currency.currencies(el => el.status === state.currency.status);
+// export const selectItemById = (state.IgGlobalState) => (id:string) => state.currency.find();
+// export const selectItemById = (state.IgGlobalState) => state.currency.currencies(el => el.status === state.currencies.status);
 export const selectAllCurrencyState = (state:IGlobalState) => state.currency;
